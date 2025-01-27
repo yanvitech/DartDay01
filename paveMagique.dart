@@ -1,10 +1,10 @@
 void main() {
-  double volume = calculVolumePave(32, 43, 5);
+  double volume = calculVolumePave();
   print(volume);
-  double aire = calculSurfaceTotalePave(3, 6, 23);
+  double aire = calculSurfaceTotalePave();
   print(aire);
   
-  double airBase = calculSurfaceBasePave(3, 6, 23);
+  double airBase = calculSurfaceBasePave();
   print(airBase);
 
 }
@@ -19,7 +19,7 @@ double calculSurfaceTotalePave(double largeur, double longeur, double hauteur){
   return air;
 }
 
-double calculSurfaceBasePave(double largeur, double longeur, double hauteur){
-  double airBase = 2 * (largeur + longeur);
+double calculSurfaceBasePave(double largeur, double longeur){
+  double airBase = largeur * longeur;
   return airBase;
 }
