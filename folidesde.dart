@@ -4,7 +4,7 @@ void main() {
   print(nombreAlea);
    int nombreDeLancer = lancerDeMultiple(5);
   print(nombreDeLancer);
-   int nombreDeLancer = lancerDeMultiple(5);
+   int nombreDeLancer = lancerDeAvecConditions(5);
   print(nombreDeLancer);
 
 }
@@ -26,8 +26,7 @@ int lancerDeMultiple(int nombreDeLancers){
   }
   return 0;
 }
-
-int lancerDeMultiple(int nombreDeLancers){
+int lancerDeAvecConditions(int nombreDeLancers){
   
   for(int i = 0; i < nombreDeLancers ; i++){
      var random = Random();
