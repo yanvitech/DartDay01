@@ -8,6 +8,8 @@ void main() {
   print(airBase);
     double perimetreBase = calculPerimetreBasePave(3, 6);
   print(perimetreBase);
+    double diagonale = calculDiagonalePave(23,4);
+  print(diagonale);
 
 }
 
@@ -29,5 +31,10 @@ double calculPerimetreBasePave(double largeur, double longeur){
   double perimetreBase = 2*(largeur+longeur);
   return perimetreBase;
 }
+double calculDiagonalePave(double largeur, double longeur){
+  double diagonale = (largeur*largeur)+(longeur*longeur);
+  return diagonale/2;
+}
+
 
 
