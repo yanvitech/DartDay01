@@ -6,6 +6,8 @@ void main() {
   
   double airBase = calculSurfaceBasePave();
   print(airBase);
+    double perimetreBase = calculPerimetreBasePave(3, 6);
+  print(perimetreBase);
 
 }
 
@@ -23,3 +25,9 @@ double calculSurfaceBasePave(double largeur, double longeur){
   double airBase = largeur * longeur;
   return airBase;
 }
+double calculPerimetreBasePave(double largeur, double longeur){
+  double perimetreBase = 2*(largeur+longeur);
+  return perimetreBase;
+}
+
+
