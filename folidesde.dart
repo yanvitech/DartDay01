@@ -4,6 +4,8 @@ void main() {
   print(nombreAlea);
    int nombreDeLancer = lancerDeMultiple(5);
   print(nombreDeLancer);
+   int nombreDeLancer = lancerDeMultiple(5);
+  print(nombreDeLancer);
 
 }
 
@@ -21,6 +23,21 @@ int lancerDeMultiple(int nombreDeLancers){
      var random = Random();
     int randomint = random.nextInt(7);
     print(randomint);
+  }
+  return 0;
+}
+
+int lancerDeMultiple(int nombreDeLancers){
+  
+  for(int i = 0; i < nombreDeLancers ; i++){
+     var random = Random();
+    int randomint = random.nextInt(7);
+    print(randomint);
+    if(randomint<3){
+       var random = Random();
+      int randomint = random.nextInt(7);
+      print(randomint);
+    }
   }
   return 0;
 }
