@@ -6,6 +6,8 @@ void main() {
   print(nombreDeLancer);
    int nombreDeLancer = lancerDeAvecConditions(5);
   print(nombreDeLancer);
+   int nombreDeLancer = lancerDeEnBoucle(5);
+  print(nombreDeLancer);
 
 }
 
@@ -40,3 +42,17 @@ int lancerDeAvecConditions(int nombreDeLancers){
   }
   return 0;
 }
+
+int lancerDeEnBoucle(int nombreDeLancers){
+    var random = Random();
+      int randomint = random.nextInt(7);
+  while(randomint < 6){
+  for(int i = 0; i < nombreDeLancers ; i++){
+     var random = Random();
+    int randomint = random.nextInt(7);
+    print(randomint);
+  }
+  }
+  return 0;
+}
+
